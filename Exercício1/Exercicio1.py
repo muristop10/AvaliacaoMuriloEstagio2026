@@ -1,6 +1,7 @@
 # 1) Sistema de Venda e Fidelidade de Posto de Combustível (Foco em Abastecimento)
 from IPython.display import clear_output
 erroPadrao = f"\033[31m{"Digite uma opção válida.":^20}\033[0m"
+finPadrao = f"\033[32m{"Programa finalizado!":^20}\033[0m"
 op = ""
 
 def menu():
@@ -18,7 +19,7 @@ def main():
                 transacao()
                 break
             elif (op == 2):
-                print(f"\033[32m{"Programa finalizado!":^20}\033[0m")
+                print(finPadrao)
                 break
             else:
                 print(erroPadrao)
@@ -96,7 +97,7 @@ def finalizar(total, totalComDesconto, op, clienteFid):
                 main()
                 break
             else:
-                print(f"\033[32m{"Programa finalizado!":^20}\033[0m")
+                print(finPadrao)
                 break
         except Exception as e:
             print("Erro: ", e)
