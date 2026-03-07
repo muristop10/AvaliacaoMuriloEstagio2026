@@ -1,0 +1,10 @@
+.div-container {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    background-color: rgb(249, 77, 146);
+    padding: 30px;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 50%;
+}
