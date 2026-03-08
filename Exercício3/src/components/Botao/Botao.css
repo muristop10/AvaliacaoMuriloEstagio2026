@@ -1,0 +1,22 @@
+#botaoBusca {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 30%;
+    margin: 0 auto;
+    transition: 0.3s ease;
+    border: 2px solid #ff69b4;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#botaoBusca:hover {
+    background-color: #ff85c1;
+    transition: 0.3s ease;
+    font-weight: bold;
+    scale: 1.05;
+    font-size: 1.1em;
+}

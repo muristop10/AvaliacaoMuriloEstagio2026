@@ -11,6 +11,10 @@
 }
 
 input:hover {
-    border-color: #646cff;
     box-shadow: 0 4px 8px rgba(100, 108, 255, 0.2);
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
 }

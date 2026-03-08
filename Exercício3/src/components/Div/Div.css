@@ -1,10 +1,12 @@
 .div-container {
     display: flex;
+    flex-direction: column;
     text-align: center;
     gap: 20px;
-    background-color: rgb(249, 77, 146);
+    background-color: #efc4ff;
     padding: 30px;
     border-radius: 5px;
     margin: 50px auto;
+    border: 2px solid #d260d5;
     width: 50%;
 }
