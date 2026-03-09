@@ -1,0 +1,12 @@
+p {
+    font-size: 1.2em;
+    color: #000000;
+    line-height: 1.2px;
+}
+
+.paragrafoErro {
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}

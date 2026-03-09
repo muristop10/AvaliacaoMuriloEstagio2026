@@ -1,4 +1,4 @@
-#botaoBusca {
+button {
     background-color: #ff69b4;
     color: white;
     border: none;
@@ -13,7 +13,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#botaoBusca:hover {
+button:hover {
     background-color: #ff85c1;
     transition: 0.3s ease;
     font-weight: bold;

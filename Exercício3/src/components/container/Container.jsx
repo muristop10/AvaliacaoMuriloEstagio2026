@@ -1,7 +1,7 @@
-import "./Div.css"
+import "./Container.css"
 import React from "react";
 
-export default function Div(props) {
+export default function Container(props) {
     return <>
         <div className="div-container">{props.children}</div>
     </>
