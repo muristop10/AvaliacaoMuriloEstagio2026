@@ -1,17 +1,28 @@
 export const buscarDados = async (query) => {
   const p = document.getElementById("resultado");
   try {
-    const response = await fetch(`https://api.github.com/users/${query}`);
-
-    if (!response.ok) {
-
+    // busca dos dados do user
+    const respostaUsuario = await fetch(`https://api.github.com/users/${query}`);
+    const dadosUsuario = await respostaUsuario.json();
+    if (!respostaUsuario.ok) {
       if (p) p.textContent = "Usuário não encontrado.";
       return null;
     }
 
-    const dados = await response.json();
+    // busca dos repositórios do user
+    const respostaRepositorios= await fetch(`https://api.github.com/users/${query}/repos`);
+    const dadosRepositorios = await respostaRepositorios.json();
+    if (!respostaRepositorios.ok) {
+      if (p) p.textContent = "Erro no encontrar repositórios."
+    }
+
     if (p) p.textContent = ""; 
-    return dados;
+
+    //volta ambos os dados
+    return {
+      perfil: dadosUsuario,
+      repositorios: dadosRepositorios
+    };
 
   } catch (error) {
     if (p) p.textContent = "Erro na busca ou sem conexão.";

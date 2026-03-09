@@ -9,4 +9,43 @@
     margin: 50px auto;
     border: 2px solid #d260d5;
     width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div-dadosPerfil {
+    display: flexbox;
+    text-align: justify;
+    margin: 0 auto;
+    background-color: #efc4ff;
+    width: 50%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 2px solid #d260d5;
+    padding: 20px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #d260d5;
+        transition: 0.3s ease-in-out;
+    }
+
+    img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.div-dadosRepositorios {
+    display: flexbox;
+    text-align: justify;
+    margin: 0 auto;
+    background-color: #efc4ff;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 2px solid #d260d5;
+    padding: 20px;
 }

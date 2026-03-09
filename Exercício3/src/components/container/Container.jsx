@@ -3,6 +3,6 @@ import React from "react";
 
 export default function Container(props) {
     return <>
-        <div className="div-container">{props.children}</div>
+        <div class={props.class}>{props.children}</div>
     </>
 }
