@@ -44,6 +44,10 @@ Para rodar os dois primeiros exercícios, basta navegar aos diretórios pelo ter
 ```
 cd [pasta do exercício]
 ```
+E depois rodar o comando:
+```
+py [nome do arquivo].py
+```
 
 Por fim, dentro do diretório Exercício3, basta rodar o comando:
 ```
