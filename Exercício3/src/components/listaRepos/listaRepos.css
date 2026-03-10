@@ -1,0 +1,11 @@
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+ol a {
+    text-decoration: none;
+    color: #333;
+}

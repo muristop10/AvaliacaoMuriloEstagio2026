@@ -1,3 +1,8 @@
+import { filtrarRepos } from "../scripts/filtroSelect";
+
+// ordena e retorna nova lista (não modifica original)
+const ordenar = (repositorios, criterio) => filtrarRepos(repositorios, criterio);
+
 export const buscarDados = async (query) => {
   const p = document.getElementById("resultado");
   try {
@@ -11,14 +16,16 @@ export const buscarDados = async (query) => {
 
     // busca dos repositórios do user
     const respostaRepositorios= await fetch(`https://api.github.com/users/${query}/repos`);
-    const dadosRepositorios = await respostaRepositorios.json();
+    let dadosRepositorios = await respostaRepositorios.json();
     if (!respostaRepositorios.ok) {
       if (p) p.textContent = "Erro no encontrar repositórios."
     }
 
     if (p) p.textContent = ""; 
 
-    //volta ambos os dados
+    // aplica ordenação padrão antes de devolver os dados
+    dadosRepositorios = ordenar(dadosRepositorios, "estrelas_desc");
+
     return {
       perfil: dadosUsuario,
       repositorios: dadosRepositorios

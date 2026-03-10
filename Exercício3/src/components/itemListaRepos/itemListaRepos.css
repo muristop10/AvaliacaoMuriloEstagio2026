@@ -1,0 +1,20 @@
+li {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px dotted #d260d5;
+    padding: 15px;
+    background-color: #FAFAFA;
+    margin: 15px 0;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    transition: 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+li a {
+    display: block;
+}
