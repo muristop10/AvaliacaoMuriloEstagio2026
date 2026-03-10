@@ -14,12 +14,13 @@ Para os dois primeiros algoritmos foi utilizada a linguagem Python, enquanto par
 # Dependências
 
 Primeiramente, instale o python da versão 3.12.6 no website, **https://www.python.org/downloads/**.
+Durante o processo de instalação, deve-se habilitar também o download dos componentes **py** e **pip**.
 
-Depois disso, será necessário instalar o **node.js** em sua máquina, através do link externo **https://nodejs.org/en/download**.
+Depois disso, será necessário instalar o **node.js** da versão 24.14.0 em sua máquina, através do link externo **https://nodejs.org/en/download**.
 
-Finalmente, será necessário instalar a ferramenta de desenvolvimento para utilizar o servidor local **Vite**, rodando o comando:
+Finalmente, será necessário instalar a ferramenta de desenvolvimento para utilizar o servidor local **Vite**, rodando o comando no terminal dentro do diretório Exercício3:
 ```
-npm install -D vite
+npm install
 ```
 
 Versões:
@@ -36,7 +37,15 @@ Node.js: **v24.14.0**
 
 Com todas as dependências instaladas, basta clonar o repositório através do comando no terminal:
 ```
-git clone <ver isso aqui>
+git clone https://github.com/muristop10/AvaliacaoMuriloEstagio2026.git
 ```
 
-Por fim, dentro do diretório correto basta rodar o comando ```npm run dev```, e o servidor local é iniciado.
+Para rodar os dois primeiros exercícios, basta navegar aos diretórios pelo terminal:
+```
+cd [pasta do exercício]
+```
+
+Por fim, dentro do diretório Exercício3, basta rodar o comando:
+```
+npm run dev
+```
