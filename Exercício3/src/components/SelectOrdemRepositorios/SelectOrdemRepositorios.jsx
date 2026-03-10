@@ -14,7 +14,7 @@ export default function SelectOrdemRepositorios(props) {
     };
 
     return <>
-        <select id={props.id} className={props.class} defaultValue="estrelas_asc" onChange={mudancaDeOpcao}>
+        <select id={props.id} className={props.class} defaultValue="estrelas_desc" onChange={mudancaDeOpcao}>
             {props.children}
         </select>
     </>
