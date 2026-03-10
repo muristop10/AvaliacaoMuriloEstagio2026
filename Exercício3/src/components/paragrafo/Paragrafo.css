@@ -1,7 +1,18 @@
 p {
     font-size: 1.2em;
     color: #000000;
-    display: block;
+}
+
+p a {
+    color: #ec00d8;
+    text-decoration: none;
+    font-weight: bold;
+    display:inline;
+}
+
+p a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .paragrafoErro {

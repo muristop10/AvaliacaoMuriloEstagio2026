@@ -1,6 +1,3 @@
-// ordenada por número de estrelas (decrescente) por padrão;
-// (ex: crescente por estrelas, por nome, data de atualização);
-
 // * Eu, como usuário, desejo clicar em um repositório da lista e ser redirecionado para uma página de detalhes do repositório, exibindo:
 //     * nome
 //     * descrição
@@ -26,6 +23,12 @@ import { filtrarRepos } from "./components/scripts/filtroSelect";
 export default function App() {
   // set dos use states, para mostrar os elementos dinamicos nos componentes react
   const [dados, setDados] = useState(null);
+  const [repoExpandido, setRepoExpandido] = useState(null); // rastreia qual repositório está expandido
+
+  // mostrar: expande se não estiver, recolhe se estiver -> itemListaRepo
+  const mostrarDetalhes = (id) => {
+    setRepoExpandido(repoExpandido === id ? null : id);
+  };
 
   return <>
 
@@ -59,13 +62,16 @@ export default function App() {
 
         <ListaRepos>
           {dados.repositorios.map((repositorioDado) => (
-            <a href={repositorioDado.html_url} target="_blank">
-            <ItemListaRepos key={repositorioDado.id}>
+            <ItemListaRepos key={repositorioDado.id} onClick={() => mostrarDetalhes(repositorioDado.id)}>
               <h3>{repositorioDado.name}</h3>
-              <p>Descrição: {repositorioDado.description || "Indisponível"}</p>
-              <p>Estrelas: {repositorioDado.stargazers_count + "⭐"}</p>
+              <Paragrafo>Estrelas: {repositorioDado.stargazers_count + "⭐"}</Paragrafo>
+              {repoExpandido === repositorioDado.id && ( <>
+                  <Paragrafo>Descrição: {repositorioDado.description || "Indisponível"}</Paragrafo>
+                  <Paragrafo>Linguagem principal: {repositorioDado.language || "Indisponível"}</Paragrafo>
+                  <Paragrafo><a href={repositorioDado.html_url} target="_blank" rel="noopener noreferrer">Ver no GitHub</a></Paragrafo>
+                </>
+              )}
             </ItemListaRepos>
-            </a>
           ))}
           </ListaRepos>
         </Container>

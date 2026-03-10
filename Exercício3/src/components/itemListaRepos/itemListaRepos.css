@@ -6,6 +6,8 @@ li {
     background-color: #FAFAFA;
     margin: 15px 0;
     transition: 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 li:hover {
@@ -13,8 +15,4 @@ li:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transform: scale(1.02);
-}
-
-li a {
-    display: block;
 }
