@@ -49,3 +49,19 @@
     border: 2px solid #d260d5;
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    .div-container {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .div-dadosPerfil, .div-dadosRepositorios {
+        width: 70%;
+        padding: 15px;
+    }
+
+    .div-dadosPerfil img {
+        width: 50%;
+    }
+}

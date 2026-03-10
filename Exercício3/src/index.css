@@ -4,3 +4,10 @@ body {
   align-items: center;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}

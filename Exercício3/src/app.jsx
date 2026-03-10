@@ -1,9 +1,4 @@
-// * Eu, como usuário, desejo clicar em um repositório da lista e ser redirecionado para uma página de detalhes do repositório, exibindo:
-//     * nome
-//     * descrição
-//     * número de estrelas
-//     * linguagem principal
-//     * link externo para o repositório no GitHub
+//responsividade
 
 import { useState } from "react";
 import React from "react";
@@ -76,9 +71,6 @@ export default function App() {
           </ListaRepos>
         </Container>
         </>
-    
-
-      
     } 
   </>
 };
