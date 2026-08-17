@@ -2,7 +2,7 @@
 
 Esse é o repositório contendo todos os três exerícios requisitados para a prova técnica.
 
-# Recursos/linguagens utilizadas
+## Recursos/linguagens utilizadas
 
 Para os dois primeiros algoritmos foi utilizada a linguagem Python, enquanto para o terceiro foram utilizadas:
 - JavaScript + React (.jsx);
@@ -11,7 +11,11 @@ Para os dois primeiros algoritmos foi utilizada a linguagem Python, enquanto par
 - Node.js;
 - E a ferramenta de desenvolvimento Vite.
 
-# Dependências
+## Funcionalidades
+O exercício 3 consome a API pública do github, trabalhando com programação assíncrona e puxando os dados público de qualquer usuário da plataforma.
+!(
+
+## Dependências
 
 Primeiramente, instale o python da versão 3.12.6 no website, **https://www.python.org/downloads/**.
 Durante o processo de instalação, deve-se habilitar também o download dos componentes **py** e **pip**.
