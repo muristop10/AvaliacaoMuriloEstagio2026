@@ -1,5 +1,7 @@
 # Avaliação de Estágio - Murilo Eduardo Thomé
 
+> Se achou esse projeto interessante. considere dar uma estrela. ⭐
+
 Esse é o repositório contendo todos os três exerícios requisitados para a prova técnica.
 
 ## Recursos/linguagens utilizadas
